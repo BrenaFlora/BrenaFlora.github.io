@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* remove a rolagem para o efeito de partículas preencher a tela */
+    background-color: #000; /* cor de fundo preta */
+    color: #fff; /* cor do texto branca */
+    font-family: 'Poppins', sans-serif; /* fonte personalizada */
+    text-align: center; /* centraliza o texto */
+}
+
+h1 {
+    position: absolute;
+    top: 20px; /* posiciona o título no topo da página */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translateX(-50%); /* ajusta o título para estar exatamente no centro */
+    font-size: 2.5em; /* tamanho da fonte do título */
+    font-weight: 600; /* peso da fonte mais forte */
+    z-index: 1; /* garante que o título fique sobre as partículas */
+}
+
+/* estilo para a descrição das instruções */
+.description {
+    position: absolute;
+    top: 100px; /* posiciona a descrição abaixo do título */
+    left: 50%; /* centraliza horizontalmente */
+    transform: translateX(-50%); /* ajusta a descrição para estar no centro */
+    font-size: 1.2em; /* tamanho da fonte da descrição */
+    font-weight: 300; /* peso da fonte mais leve */
+    z-index: 1; /* garante que a descrição fique sobre as partículas */
+}
+
+/* estiliza o contêiner das partículas */
+#particles-js {
+    position: absolute;
+    width: 100%; /* largura total da viewport */
+    height: 100%; /* altura total da viewport */
+    top: 0;
+    left: 0;
+    z-index: 0; /* garante que as partículas fiquem atrás do título e da descrição */
+}
